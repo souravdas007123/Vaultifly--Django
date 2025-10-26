@@ -14,7 +14,12 @@
     <section>
         <nav>{% include "page_html/navbar.html" %}</nav>
         <main>
-            {% block manin %}{% endblock manin %}
+            <div class="main_heading">
+                {% block heading %}hi{% endblock heading %}
+            </div>
+            <div class="main_content">
+                {% block main %}{% endblock main %}
+            </div>
         </main>
     </section>
      <script
