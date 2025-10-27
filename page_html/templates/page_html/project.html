@@ -2,6 +2,45 @@
 
 {% block heading %}Project{% endblock heading %}
 
-{% block main %}
-ata project area
-{% endblock main %}
+{% block navigation_tab %}
+
+<a href="{% url 'projectoverview' %}">
+<div class="content_navigation_link">Overview</div>
+</a>
+
+<a href="{% url 'projectworkspace' %}">
+<div class="content_navigation_link">Workspaces</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Tasks</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Timeline</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Team</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Messages</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Files</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Alerts</div>
+</a>
+
+<a href="">
+<div class="content_navigation_link">Reports</div>
+</a>
+
+
+
+{% endblock navigation_tab %}
+

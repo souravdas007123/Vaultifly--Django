@@ -15,10 +15,15 @@
         <nav>{% include "page_html/navbar.html" %}</nav>
         <main>
             <div class="main_heading">
-                {% block heading %}hi{% endblock heading %}
+                {% block heading %}{% endblock heading %}
             </div>
             <div class="main_content">
-                {% block main %}{% endblock main %}
+                <div class="main_content_navigation_tab">
+                    {% block navigation_tab %}{% endblock navigation_tab %}
+                </div>
+                <div class="main_content_data">
+                    {% block main_data %}{% endblock main_data %}
+                </div>
             </div>
         </main>
     </section>
