@@ -21,3 +21,18 @@ def finance(request):
 
 def inventory(request):
     return render(request,'page_html/inventory.html')
+
+def report(request):
+    return render(request,'page_html/report.html')
+
+def team(request):
+    return render(request,'page_html/team.html')
+
+def clients(request):
+    return render(request,'page_html/client.html')
+
+def setting(request):
+    return render(request,'page_html/setting.html')
+
+def support(request):
+    return render(request,'page_html/support.html')    
