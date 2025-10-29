@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support
+from page_html.views import home,asset,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support,settingprofile
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -12,6 +12,7 @@ urlpatterns = [
     path('team/', team,name='team'),
     path('clients/', clients,name='clients'),
     path('setting/', setting,name='setting'),
+    path('settingprofile/', settingprofile,name='settingprofile'),
     path('support/', support,name='support'),
 
 ]

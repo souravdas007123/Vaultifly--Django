@@ -34,5 +34,8 @@ def clients(request):
 def setting(request):
     return render(request,'page_html/setting.html')
 
+def settingprofile(request):
+    return render(request,'page_html/setting_profile.html')
+
 def support(request):
     return render(request,'page_html/support.html')    

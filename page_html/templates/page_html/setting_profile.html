@@ -1,0 +1,45 @@
+{% extends "page_html/setting.html" %}
+
+{% block main_data %}
+{% load static %}
+<div class="profile_container">
+  <div class="profile_img_container">
+    <div class="profile_img_wrraper">
+        <img src="{% static 'base/images/' %}" alt="">
+    </div>
+    <div class="profile_img_intro">
+        <h5>Sourav Das</h5>
+        <p>sjdas552@gmail.com</p>
+        <p>Admin</p>
+    </div>
+    <div class="profile_update_btn">
+        <a href=""><button>Edit</button></a>
+        <a href=""><button>Save</button></a>  
+    </div>
+  </div>
+  <div class="profile_data_container">
+    <div class="profile_name_container">
+      <div class="profile_name_container_wrraper">
+        <div class="profile_name_head">Name</div>
+        <div class="profile_name_data">Sourav Das</div>
+      </div>
+      <div class="profile_name_container_wrraper">
+        <div class="profile_name_head">Role</div>
+        <div class="profile_name_data">Admin</div>
+      </div>
+      <div class="profile_name_container_wrraper">
+        <div class="profile_name_head">Email</div>
+        <div class="profile_name_data">sjdas552@gmail.com</div>
+      </div>
+      <div class="profile_name_container_wrraper">
+        <div class="profile_name_head">Contact</div>
+        <div class="profile_name_data">+918245749385</div>
+      </div>
+      <div class="profile_name_container_wrraper">
+        <div class="profile_name_head">Status</div>
+        <div class="profile_name_data">Active</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock main_data %}
