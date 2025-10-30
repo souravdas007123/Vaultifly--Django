@@ -37,5 +37,11 @@ def setting(request):
 def settingprofile(request):
     return render(request,'page_html/setting_profile.html')
 
+def settingpassword(request):
+    return render(request,'page_html/setting_password.html')
+
+def settingnotification(request):
+    return render(request,'page_html/setting_notification.html')
+
 def support(request):
     return render(request,'page_html/support.html')    
