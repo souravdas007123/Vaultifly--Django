@@ -524,7 +524,6 @@ button{
     }
     .sidebar_container{
         flex-direction: column;
-        /* min-width: 100% !important; */
         min-height: 40px !important;
     }
     .sidebar{
@@ -535,6 +534,7 @@ button{
         justify-content: space-evenly;
         border-radius: 0;
         padding: 0;
+        min-height: 40px !important;
     }
     .mobile_hide{
         display: none;
