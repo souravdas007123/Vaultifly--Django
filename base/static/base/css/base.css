@@ -16,6 +16,8 @@
     --theame3: linear-gradient(230deg, #ffc480, #ff763b); /*  */
     --theame4: linear-gradient(230deg, #0e4cfd, #6a8eff); /* */
     --theame5:#F2F0EF;
+    --theame6:#759bff;
+    --theame7:#fbaaa2;
     --body-color:#fff;
     --sidebar-color: #759bff;
     --sidebar-hover-color: #fbaaa2;
@@ -158,6 +160,7 @@ a{
 }
 button{
     padding: 0.7rem 1rem;
+    border: none;
 }
 /* sidebar  */
 
@@ -353,9 +356,39 @@ button{
 
 
 /* user  */
-
-
-
+.user_container button{
+    padding: 0;
+    margin: 0;
+    anchor-name:--profile-button;
+    background: var(--theame7);
+    
+}
+.user_popover:popover-open{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    position-anchor: --profile-button;
+    inset: auto;
+    top: anchor(bottom);
+    right: anchor(center);
+    outline: 1px solid var(--theame7);
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    margin-block-start: 1rem;
+    background: var(--theame6);
+    color: white;
+    
+}
+.user_profile_link{
+    padding: 0.7rem 0;
+    color: white;
+}
+.logout_btn{
+    background: var(--theame7);
+    padding: 0.5rem 0;
+    text-align: center;
+}
 /* main area  */
 
 .main_heading{
@@ -417,6 +450,23 @@ button{
     justify-content: center;
     align-items: center;
     background-color:var(--edit-button-color);
+}
+.profile_edit_popover{
+    padding: 0;
+    margin: 0;
+    anchor-name:--profileedit-button;
+    background: var(--theame7);
+}
+.profile_edit_popover_container:popover-open{
+    padding: 0.7rem;
+    background: var(--theame6);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    position-anchor:--profileedit-button;
+    inset: auto;
+    bottom: anchor(top);
+    right: anchor(center);
 }
 .profile_data_container{
     display: grid;
