@@ -18,6 +18,7 @@
     --theame5:#F2F0EF;
     --theame6:#759bff;
     --theame7:#fbaaa2;
+    --theame8:#fc5286;
     --body-color:#fff;
     --sidebar-color: #759bff;
     --sidebar-hover-color: #fbaaa2;
@@ -458,7 +459,7 @@ button{
 
 .profile_edit_popover_container:popover-open{
     padding: 0.7rem;
-    background: var(--theame6);
+    background: white;
     display: grid;
     grid-template-columns: 1fr;
     position: absolute;
@@ -472,6 +473,17 @@ button{
 
 .profile_edit_btn_container{
     display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+}
+.edit_save_btn{
+    background: var(--theame6);
+    color: var(--heading-color-w);
+}
+.edit_cancel_btn{
+    background: var(--theame8);
+    color: var(--heading-color-w);
 }
 .input-group .edit_input{
     padding: 0.5rem 0.5rem;
