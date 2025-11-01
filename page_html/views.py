@@ -40,8 +40,14 @@ def settingprofile(request):
 def settingpassword(request):
     return render(request,'page_html/setting_password.html')
 
+def forgetpassword(request):
+    return render(request,'page_html/forget_password.html')
+
 def settingnotification(request):
     return render(request,'page_html/setting_notification.html')
+
+def settingauthentication(request):
+    return render(request,'page_html/setting_authentication.html')
 
 def support(request):
     return render(request,'page_html/support.html')    
