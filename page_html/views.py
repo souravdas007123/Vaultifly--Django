@@ -7,6 +7,9 @@ def home(request):
 def asset(request):
     return render(request,'page_html/asset.html')
 
+def assetoverview(request):
+    return render(request,'page_html/asset_overview.html')
+
 def project(request):
     return render(request,'page_html/project.html')
 

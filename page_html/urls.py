@@ -1,8 +1,9 @@
 from django.urls import path
-from page_html.views import home,asset,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
+from page_html.views import home,asset,assetoverview,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
+    path('assetoverview/', assetoverview,name='assetoverview'),
     path('project/', project,name='project'),
     path('projectoverview/', projectoverview,name='projectoverview'),
     path('projectworkspace/', projectworkspace,name='projectworkspace'),
