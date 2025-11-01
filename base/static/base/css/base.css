@@ -671,6 +671,20 @@ button{
     background-color: var(--theame6);
     color: var(--heading-color-w);
 }
+/* asset capture  */
+.asset_capture_container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.asset_capture_sidebar{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    background-color: var(--sidebar-color);
+}
+.asset_capture_main_contain{
+    background-color: #fc5286;
+}
 /* media mobile  */
 
 @media(max-width:667px){

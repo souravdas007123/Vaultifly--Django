@@ -10,6 +10,18 @@ def asset(request):
 def assetoverview(request):
     return render(request,'page_html/asset_overview.html')
 
+def assetcapture(request):
+    return render(request,'page_html/asset_capture.html')
+
+def assetcapturehardwarecontain(request):
+    return render(request,'page_html/asset_capture_hardware_contain.html')
+
+def assetcapturesoftwarecontain(request):
+    return render(request,'page_html/asset_capture_software_contain.html')
+
+def assetcapturelicensecontain(request):
+    return render(request,'page_html/asset_capture_license_contain.html')
+
 def project(request):
     return render(request,'page_html/project.html')
 

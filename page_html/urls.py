@@ -1,9 +1,13 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
     path('assetoverview/', assetoverview,name='assetoverview'),
+    path('assetcapture/', assetcapture,name='assetcapture'),
+    path('assetcapturehardwarecontain/', assetcapturehardwarecontain,name='assetcapturehardwarecontain'),
+    path('assetcapturesoftwarecontain/', assetcapturesoftwarecontain,name='assetcapturesoftwarecontain'),
+    path('assetcapturelicensecontain/', assetcapturelicensecontain,name='assetcapturelicensecontain'),
     path('project/', project,name='project'),
     path('projectoverview/', projectoverview,name='projectoverview'),
     path('projectworkspace/', projectworkspace,name='projectworkspace'),
