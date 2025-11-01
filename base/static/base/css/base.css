@@ -30,7 +30,7 @@
     --logo-color:rgb(255, 255, 255);
     --save-button-color:#759bff;
     --edit-button-color:#ffc480;
-    --delete-button-color:linear-gradient(230deg, #fc5286, #fbaaa2);
+    --delete-button-color:#fc5286;
     --section-color:white;
     --heading-color-b:black;
     --heading-color-g:#6d6c6c;
@@ -486,7 +486,7 @@ button{
     color: var(--heading-color-w);
 }
 .edit_cancel_btn{
-    background: var(--theame8);
+    background: var(--delete-button-color);
     color: var(--heading-color-w);
 }
 .input-group .edit_input{
@@ -582,6 +582,11 @@ button{
     background: var(--theame6);
     color: var(--heading-color-w);
 }
+.notification_mark_btn button:nth-child(even){
+    background: var(--delete-button-color);
+    color: var(--heading-color-w);
+}
+
 .setting_notifications{
     background: var(--theame2);
     padding: 0.5rem;
