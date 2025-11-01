@@ -565,17 +565,36 @@ button{
 .setting_notification_container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.3rem;
+    gap: 0.5rem;
    
+}
+.setting_notification_edit_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fc5286; */
+}
+.checkbox-wrapper-46 .inp-cbx{
+    width: 18px;
+    height: 18px;
+}
+.notification_mark_btn button{
+    background: var(--theame6);
+    color: var(--heading-color-w);
 }
 .setting_notifications{
     background: var(--theame2);
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 0.5rem;
 }
-
+.setting_notification_checked_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0e4cfd; */
+}
 /* forget-password page  */
 
 .forget_container{

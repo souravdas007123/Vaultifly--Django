@@ -1,16 +1,40 @@
-{% extends "page_html/setting.html" %}
-
-{% block main_data %}
+{% extends "page_html/setting.html" %} {% block main_data %}
 
 <div class="setting_notification_container">
-    <div class="setting_notifications">
-        <h6>System</h6>
-        <p>Lorem ipsum dolor sit amet consectetur a autem,is tenetur eum culpa ex totam deserunt blanditiis.</p>
+  <div class="setting_notification_edit_container">
+    <div class="notification_select_box">
+      <!-- From Uiverse.io by vishnupprajapat -->
+      <div class="checkbox-wrapper-46">
+        <input type="checkbox" id="cbx-46" class="inp-cbx" />
+        <label for="cbx-46" class="cbx">
+          <!-- <span>
+            <svg viewBox="0 0 12 10" height="10px" width="12px">
+              <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg>
+            </span> -->
+          <span></span>
+        </label>
+      </div>
     </div>
-    <div class="setting_notifications">
-        <h6>System</h6>
-        <p>Lorem ipsum dolor sit amet consectetur aSed eum ini odio debitis tenetur eum culpa ex totam deserunt blanditiis.</p>
+    <!-- From Uiverse.io by vishnupprajapat -->
+    <div class="notification_mark_btn">
+      <button>Mark all read</button>
     </div>
+  </div>
+  <div class="setting_notifications">
+    <div class="setting_notification_checked_box">
+        <input type="checkbox" id="cbx-47" class="inp-cbxx" />
+        <label for="cbx-47" class="cbxx">
+          <span></span>
+        </label>
+    </div>
+    <div class="setting_notification_data">
+      <h6>System</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur a autem,is tenetur eum culpa ex
+        totam deserunt blanditiis.
+      </p>
+    </div>
+  </div>
 </div>
 
 {% endblock main_data %}
