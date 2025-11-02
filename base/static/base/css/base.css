@@ -182,7 +182,8 @@ button{
     background: var(--sidebar-toggle-color);
     padding: 0.7rem 0.5rem;
 }
-.sidebar_toggle :hover{
+
+.sidebar_toggle a:hover{
     background-color:var(--sidebar-toggle-hover-color);
 }
 .svg_icon{
