@@ -23,6 +23,6 @@ urlpatterns = [
     path('forgetpassword/', forgetpassword,name='forgetpassword'),
     path('settingnotification/', settingnotification,name='settingnotification'),
     path('settingauthentication/', settingauthentication,name='settingauthentication'),
-    path('support/', support,name='support'),
+    path('support/', support,name='support'),  
 
 ]
