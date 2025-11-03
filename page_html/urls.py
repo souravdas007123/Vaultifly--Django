@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,classification,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -16,6 +16,7 @@ urlpatterns = [
     path('report/', report,name='report'),
     path('team/', team,name='team'),
     path('clients/', clients,name='clients'),
+    path('classification/', classification,name='classification'),
     path('setting/', setting,name='setting'),
     path('settingprofile/', settingprofile,name='settingprofile'),
     path('settingpassword/', settingpassword,name='settingpassword'),
