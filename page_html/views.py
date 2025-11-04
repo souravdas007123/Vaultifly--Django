@@ -22,6 +22,9 @@ def assetcapturesoftwarecontain(request):
 def assetcapturelicensecontain(request):
     return render(request,'page_html/asset_capture_license_contain.html')
 
+def assetcapturecorelicensecontain(request):
+    return render(request,'page_html/asset_capture_corelicense_contain.html')
+
 def project(request):
     return render(request,'page_html/project.html')
 
@@ -68,4 +71,7 @@ def settingauthentication(request):
     return render(request,'page_html/setting_authentication.html')
 
 def support(request):
-    return render(request,'page_html/support.html')    
+    return render(request,'page_html/support.html') 
+
+def validity(request):
+    return render(request,'page_html/validity.html')    

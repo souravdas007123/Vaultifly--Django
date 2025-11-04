@@ -1,0 +1,29 @@
+{% extends "page_html/asset_capture.html" %}
+
+{% block assetcapturecontain %}
+
+<div class="corelicense_capture_input">
+
+    <div class="corelicense_capture_input_filed_container">
+
+        <form action="">
+            <label for="cars">Choose input</label>
+            <select name="cars" id="cars">
+              <option value="hi">hi</option>
+              <option value="Validity"><a href="{% url 'validity' %}">Validity & Important Dates</a></option>
+              <option value="Business">Business Identification Details</option>
+              <option value="Compliance">Compliance & Regulatory Details</option>
+              <option value="Financial">Financial and Payment Details</option>
+            </select>
+          </form>
+
+          {% include "page_html/validity.html" %}
+          
+    </div>
+
+   
+
+</div>
+
+{% endblock assetcapturecontain %}
+

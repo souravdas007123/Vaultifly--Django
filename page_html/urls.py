@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,classification,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,classification,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -8,6 +8,7 @@ urlpatterns = [
     path('assetcapturehardwarecontain/', assetcapturehardwarecontain,name='assetcapturehardwarecontain'),
     path('assetcapturesoftwarecontain/', assetcapturesoftwarecontain,name='assetcapturesoftwarecontain'),
     path('assetcapturelicensecontain/', assetcapturelicensecontain,name='assetcapturelicensecontain'),
+    path('assetcapturecorelicensecontain/', assetcapturecorelicensecontain,name='assetcapturecorelicensecontain'),
     path('project/', project,name='project'),
     path('projectoverview/', projectoverview,name='projectoverview'),
     path('projectworkspace/', projectworkspace,name='projectworkspace'),
@@ -23,6 +24,8 @@ urlpatterns = [
     path('forgetpassword/', forgetpassword,name='forgetpassword'),
     path('settingnotification/', settingnotification,name='settingnotification'),
     path('settingauthentication/', settingauthentication,name='settingauthentication'),
-    path('support/', support,name='support'),  
+    path('support/', support,name='support'),
+    path('validity/', validity,name='validity'),  
+
 
 ]
