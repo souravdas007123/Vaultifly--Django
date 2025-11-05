@@ -745,26 +745,26 @@ button{
     background:var(--theame6);
     color: var(--heading-color-w);
 }
-.corelicense_capture_filed_container{
-    display: grid;
-    grid-template-columns: auto 1fr;
-}
-.corelicense_capture_sidebar_container{
+/* .corelicense_capture_filed_container{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0;
+} */
+.corelicense_capture_sidebar_container{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
     min-height: 70vh;
-    background-color: #759bff;
-}
-/* .menu_drop{
-    display: block;
+    /* background-color: #759bff; */
 }
 .drop{
-    display: none;
-}
-.menu_drop:hover .drop{
+    display: flex;
+    justify-content: end;
     display: block;
-} */
+    text-align: right;
+}
+.drop:hover {
+    display: block;
+}
 
 /* media mobile  */
 
