@@ -135,6 +135,12 @@ span{
     border-bottom: 3px solid transparent;
     display: block;
 }
+input{
+    background-color: white;
+    border: none;
+    outline: 1px solid rgb(192, 190, 190);
+}
+
 /* heading */
 
 h1{
@@ -739,6 +745,27 @@ button{
     background:var(--theame6);
     color: var(--heading-color-w);
 }
+.corelicense_capture_filed_container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.corelicense_capture_sidebar_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    min-height: 70vh;
+    background-color: #759bff;
+}
+/* .menu_drop{
+    display: block;
+}
+.drop{
+    display: none;
+}
+.menu_drop:hover .drop{
+    display: block;
+} */
+
 /* media mobile  */
 
 @media(max-width:667px){
