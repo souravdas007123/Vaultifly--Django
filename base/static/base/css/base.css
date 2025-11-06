@@ -149,6 +149,9 @@ input{
     background-color: white;
     border: none;
     outline: 1px solid rgb(192, 190, 190);
+    width: 100%;
+    padding: 1rem;
+    color: #6d6c6c;
 }
 
 /* heading */
@@ -187,6 +190,11 @@ a{
 button{
     padding: 0.7rem 1rem;
     border: none;
+    background: var(--sidebar-color);
+    color: var(--heading-color-w);
+}
+button:hover{
+    background: var(--sidebar-hover-color);
 }
 /* sidebar  */
 
@@ -748,16 +756,22 @@ button{
     gap: 1rem;
     /* background-color: #6a8eff; */
 }
-.hardware_capture_input_filed_container input{
+/* .hardware_capture_input_filed_container input{
     padding: 1rem;
     width: 100%;
+    color: #6d6c6c;
+} */
+.input_field_dropdown{
+     padding: 1rem;
+     width: 100%;
+     color: #6d6c6c;
 }
-.hardware_capture_input button{
+/* .hardware_capture_input button{
     /* padding: 1rem; */
-    width: 100%;
+    /* width: 100%;
     background:var(--theame6);
     color: var(--heading-color-w);
-}
+} */
 /* .corelicense_capture_filed_container{
     display: grid;
     grid-template-columns: 1fr;
@@ -769,7 +783,7 @@ button{
     min-height: 70vh;
     /* background-color: #759bff; */
 }
-.drop{
+/* .drop{
     display: flex;
     justify-content: end;
     display: block;
@@ -777,8 +791,53 @@ button{
 }
 .drop:hover {
     display: block;
+} */
+/* clients all  */
+
+/* .table-container{
+    background-color: #676769;
+} */
+.table{
+    width: 100%;
+     border-collapse: collapse;
+    /* border: 1px solid black; */
+}
+.table thead tr th{
+    padding: 8px 5px;
+    border: 1px solid #dee2e685;
+    /* background-color: var(--theame7); */
 }
 
+.table thead tr{
+    font-size: 0.7rem;
+    /* font-weight:medium; */
+    letter-spacing: 0.35px;
+    color: #000000;
+    opacity: 1;
+    /* font-weight: 600; */
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+    font-size:0.8rem;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #0e0e0e;
+    background-color: var(--theame1);
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+.client_add_input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+/* .client_capture_input_filed_container input{
+    width: 100%;
+    padding: 1rem;
+} */
 /* media mobile  */
 
 @media(max-width:667px){

@@ -49,6 +49,12 @@ def team(request):
 def clients(request):
     return render(request,'page_html/client.html')
 
+def clientsviews(request):
+    return render(request,'page_html/client_list_views.html')
+
+def clientsadd(request):
+    return render(request,'page_html/client_add.html')
+
 def classification(request):
     return render(request,'page_html/classifications.html')
 
