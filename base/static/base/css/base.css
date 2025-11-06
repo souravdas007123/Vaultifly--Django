@@ -15,16 +15,18 @@
     --theame2:linear-gradient(230deg, #fc5286, #fbaaa2); /*  */
     --theame3: linear-gradient(230deg, #ffc480, #ff763b); /*  */
     --theame4: linear-gradient(230deg, #0e4cfd, #6a8eff); /* */
-    --theame5:#F2F0EF;
+    /* --theame5:#F2F0EF; */
     /* --theame6:#759bff;
     --theame7:#fbaaa2;
     --theame8:#fc5286;
     --theame9:#6d6c6c;
     --body-color:#fff; */
+    --theame5:#F2F0EF;
     --theame6:#8DBCC7;
     --theame7:#C4E1E6;
     --theame8:#A4CCD9;
     --theame9:#EBFFD8;
+    --theame10:#fc5286;
     --body-color:#fff;
     /* --sidebar-color: #759bff; */
     /* --sidebar-hover-color: #fbaaa2; */
@@ -36,11 +38,14 @@
     --sidebar-toggle-color:hsl(from var(--theame7)h s calc(l + 5));
     --sidebar-toggle-hover-color:hsl(from var(--theame7)h s calc(l - 5));
     --navbar-color:hsl(from var(--theame7)h s calc(l + 5));
+    --navbar-color-hover:hsl(from var(--theame7)h s calc(l - 5));
     --maincontent-color:#fff;
     --logo-color:rgb(255, 255, 255);
-    --save-button-color:#759bff;
+    --save-button-color:hsl(from var(--theame6)h s calc(l + 5));
+    --save-button-hover-color:hsl(from var(--theame6)h s calc(l - 5));
     --edit-button-color:#ffc480;
-    --delete-button-color:#fc5286;
+    --delete-button-color:hsl(from var(--theame10)h s calc(l + 5));
+    --delete-button-hover-color:hsl(from var(--theame10)h s calc(l - 5));
     --section-color:white;
     --heading-color-b:black;
     --heading-color-g:#6d6c6c;
@@ -145,6 +150,7 @@ span{
     border-bottom: 3px solid transparent;
     display: block;
 }
+
 input{
     background-color: white;
     border: none;
@@ -190,11 +196,11 @@ a{
 button{
     padding: 0.7rem 1rem;
     border: none;
-    background: var(--sidebar-color);
+    background: var(--save-button-color);
     color: var(--heading-color-w);
 }
 button:hover{
-    background: var(--sidebar-hover-color);
+    background: var(--save-button-hover-color);
 }
 /* sidebar  */
 
@@ -391,8 +397,17 @@ button:hover{
     /* background-color: #108ec4; */
 }
 /* notification  */
- 
 
+ .navbar_svg_icon{
+    padding: 0.2rem;
+    border-radius: var(--circelRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .navbar_svg_icon:hover{
+    background-color: var(--navbar-color-hover);
+ }
 
 /* user  */
 .user_container button{
@@ -469,7 +484,7 @@ button:hover{
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 0;
-    background:var(--theame2);
+    background:var(--theame7);
 }
 .profile_img_wrraper img{
     width: 150px;
@@ -517,13 +532,16 @@ button:hover{
     align-items: center;
     gap: 1rem;
 }
-.edit_save_btn{
-    background: var(--theame6);
+/* .edit_save_btn{
+    background: var(--save-button-color);
     color: var(--heading-color-w);
-}
+} */
 .edit_cancel_btn{
     background: var(--delete-button-color);
     color: var(--heading-color-w);
+}
+.edit_cancel_btn:hover{
+    background: var(--delete-button-hover-color);
 }
 .input-group .edit_input{
     padding: 0.5rem 0.5rem;
@@ -579,7 +597,7 @@ button:hover{
     color: var(--heading-color-w);
 }
 .password_fillup_charactor{
-    background: var(--theame2);
+    background: var(--theame7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -625,17 +643,21 @@ button:hover{
     width: 18px;
     height: 18px;
 }
-.notification_mark_btn button{
+/* .notification_mark_btn button{
     background: var(--theame6);
     color: var(--heading-color-w);
-}
+} */
 .notification_mark_btn button:nth-child(even){
     background: var(--delete-button-color);
     color: var(--heading-color-w);
 }
+.notification_mark_btn button:nth-child(even):hover{
+    background: var(--delete-button-hover-color);
+}
+
 
 .setting_notifications{
-    background: var(--theame2);
+    background: var(--theame5);
     padding: 0.5rem;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -721,10 +743,10 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-.authentication_btn button{
+/* .authentication_btn button{
     background-color: var(--theame6);
     color: var(--heading-color-w);
-}
+} */
 /* asset capture  */
 .asset_capture_container{
     min-height: 75vh;

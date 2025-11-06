@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,clientsviews,clientsadd,classification,setting,support,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,clientsviews,clientsadd,classification,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -27,6 +27,9 @@ urlpatterns = [
     path('settingnotification/', settingnotification,name='settingnotification'),
     path('settingauthentication/', settingauthentication,name='settingauthentication'),
     path('support/', support,name='support'),
+    path('taskglobal/', taskglobal,name='taskglobal'),
+    path('notesglobal/', notesglobal,name='notesglobal'),
+    path('uploadglobal/', uploadglobal,name='uploadglobal'),
     path('validity/', validity,name='validity'),  
 
 

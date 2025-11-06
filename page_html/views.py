@@ -77,7 +77,16 @@ def settingauthentication(request):
     return render(request,'page_html/setting_authentication.html')
 
 def support(request):
-    return render(request,'page_html/support.html') 
+    return render(request,'page_html/support.html')
+
+def taskglobal(request):
+    return render(request,'page_html/task_global.html')
+
+def notesglobal(request):
+    return render(request,'page_html/notes_global.html')
+
+def uploadglobal(request):
+    return render(request,'page_html/upload_global.html')     
 
 def validity(request):
     return render(request,'page_html/validity.html')    
