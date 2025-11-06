@@ -16,16 +16,26 @@
     --theame3: linear-gradient(230deg, #ffc480, #ff763b); /*  */
     --theame4: linear-gradient(230deg, #0e4cfd, #6a8eff); /* */
     --theame5:#F2F0EF;
-    --theame6:#759bff;
+    /* --theame6:#759bff;
     --theame7:#fbaaa2;
     --theame8:#fc5286;
     --theame9:#6d6c6c;
+    --body-color:#fff; */
+    --theame6:#8DBCC7;
+    --theame7:#C4E1E6;
+    --theame8:#A4CCD9;
+    --theame9:#EBFFD8;
     --body-color:#fff;
-    --sidebar-color: #759bff;
-    --sidebar-hover-color: #fbaaa2;
-    --sidebar-toggle-color: #fbaaa2;
-    --sidebar-toggle-hover-color: #759bff;
-    --navbar-color:#fbaaa2;
+    /* --sidebar-color: #759bff; */
+    /* --sidebar-hover-color: #fbaaa2; */
+    /* --sidebar-toggle-color: #fbaaa2;
+    --sidebar-toggle-hover-color: #759bff; */
+    /* --navbar-color:#fbaaa2; */
+    --sidebar-color: hsl(from var(--theame6)h s calc(l + 5));
+    --sidebar-hover-color: hsl(from var(--theame6)h s calc(l - 5));
+    --sidebar-toggle-color:hsl(from var(--theame7)h s calc(l + 5));
+    --sidebar-toggle-hover-color:hsl(from var(--theame7)h s calc(l - 5));
+    --navbar-color:hsl(from var(--theame7)h s calc(l + 5));
     --maincontent-color:#fff;
     --logo-color:rgb(255, 255, 255);
     --save-button-color:#759bff;
@@ -64,7 +74,7 @@
      --fontSize-extrasmall:clamp(0.5rem, 1.2vw + 0.5rem, 0.65rem);
 
      /* radius  */
-
+     --circelRadius:50%;
      --borderRadius:0.7rem;
      --borderRadius-button:0.6rem;
 
@@ -191,7 +201,7 @@ button{
     align-items: center;
     justify-content: space-between;
     background: var(--sidebar-toggle-color);
-    padding: 0.7rem 0.3rem;
+    padding: 1rem 0.3rem;
 }
 .sidebar_toggle_top_container svg{
     font-size: 5rem;
@@ -202,9 +212,13 @@ button{
 .sidebar_toggle_bottom_container :hover{
     background-color:var(--sidebar-toggle-hover-color);
 }
-.svg_icon{
-    padding: 11px;
-    border-radius: var(--borderRadius);
+.sidebar_toggle_svg_icon{
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--circelRadius);
+
 }
 .desktop_hide{
     display: none;
@@ -425,10 +439,12 @@ button{
 }
 .content_navigation_link{
     padding: 0.5rem 0.7rem;
-    color: var(--heading-color-w);
+    color: var(--heading-color-b);
     /* background-color: #cabbbb; */
 }
-
+.content_navigation_link:hover ~ span{
+    border-bottom: 3px solid var(--theame9);
+}
 .main_content_data{
     padding: 0.7rem 0;
 }
@@ -707,9 +723,6 @@ button{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.7rem;
-}
-.content_navigation_link:hover ~ span{
-    border-bottom: 3px solid var(--sidebar-hover-color);
 }
 
 .asset_capture_sidebar{
