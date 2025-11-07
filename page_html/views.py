@@ -58,6 +58,18 @@ def clientsadd(request):
 def classification(request):
     return render(request,'page_html/classifications.html')
 
+def classificationlocation(request):
+    return render(request,'page_html/classifications_location.html')
+
+def classificationunit(request):
+    return render(request,'page_html/classifications_unit.html')
+
+def classificationstatus(request):
+    return render(request,'page_html/classifications_status.html')
+
+def classificationcategory(request):
+    return render(request,'page_html/classifications_category.html')
+
 def setting(request):
     return render(request,'page_html/setting.html')
 

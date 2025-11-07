@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,clientsviews,clientsadd,classification,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,clientsviews,clientsadd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -20,6 +20,10 @@ urlpatterns = [
     path('clientsviews/', clientsviews,name='clientsviews'),
     path('clientsadd/', clientsadd,name='clientsadd'),
     path('classification/', classification,name='classification'),
+    path('classificationlocation/', classificationlocation,name='classificationlocation'),
+    path('classificationunit/', classificationunit,name='classificationunit'),
+    path('classificationstatus/', classificationstatus,name='classificationstatus'),
+    path('classificationcategory/', classificationcategory,name='classificationcategory'),
     path('setting/', setting,name='setting'),
     path('settingprofile/', settingprofile,name='settingprofile'),
     path('settingpassword/', settingpassword,name='settingpassword'),

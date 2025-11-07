@@ -362,7 +362,7 @@ button:hover{
  line-height: 28px;
  padding: 0 1rem;
  padding-left: 2.5rem;
- border: 1px solid black;
+ /* border: 1px solid black; */
  /* border-radius: 8px; */
  /* outline: none; */
  /* background-color: var(--theame2); */
@@ -860,6 +860,35 @@ button:hover{
     width: 100%;
     padding: 1rem;
 } */
+
+/* classifications  */
+.classsification_location_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.classsification_add_navbar_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--theame5);
+}
+.classsification_add_navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+.classsification_add_navbar input{
+    padding: 0.7rem;
+}
+.classsification_data_contain{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+}
 /* media mobile  */
 
 @media(max-width:667px){
