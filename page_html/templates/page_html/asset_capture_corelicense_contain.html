@@ -7,8 +7,8 @@
         <div class="corelicense_capture_sidebar_container">
 
         <form action="">
-            <label for="cars">Countries</label>
-            <select name="cars" id="cars">
+            <select name="cars" id="cars" class='input_field_dropdown'>
+              <option value="hi">Country</option>
               <option value="hi">India</option>
               <option value="Business">USA</option>
               <option value="Compliance">Europe</option>
@@ -16,11 +16,9 @@
           </form>
 
             <form action="">
-            <label for="cars">Business Type</label>
-            <select name="cars" id="cars">
-              <option value="hi">Basic License</option>
-              <option value="Compliance">type</option>
-              <a href="{% url 'validity' %}"><option value="Business">Validity & Important Dates</option></a>
+            <select name="cars" id="cars" class='input_field_dropdown'>
+              <option value="Compliance">Business type</option>
+              <option value="Business">Validity & Important Dates</option>
               <option value="Compliance">Business Identification Details</option>
               <option value="Compliance">Compliance & Regulatory Details</option>
               <option value="Compliance">Financial and Payment Details</option>
