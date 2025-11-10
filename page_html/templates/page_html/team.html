@@ -4,49 +4,22 @@
 
 {% block navigation_tab %}
 
-<a href="">
+<a href="{% url 'teamoverviews' %}">
 <div class="content_navigation_link">Overview</div>
 <span></span>
 </a>
 
-<a href="">
-<div class="content_navigation_link">Workspaces</div>
+<a href="{% url 'teamlistviews' %}">
+<div class="content_navigation_link">Team List</div>
 <span></span>
 </a>
 
-<a href="">
-<div class="content_navigation_link">Tasks</div>
+<a href="{% url 'teamadd' %}">
+<div class="content_navigation_link">Add Member</div>
 <span></span>
 </a>
 
-<a href="">
-<div class="content_navigation_link">Timeline</div>
-<span></span>
-</a>
 
-<a href="">
-<div class="content_navigation_link">Team</div>
-<span></span>
-</a>
 
-<a href="">
-<div class="content_navigation_link">Messages</div>
-<span></span>
-</a>
-
-<a href="">
-<div class="content_navigation_link">Files</div>
-<span></span>
-</a>
-
-<a href="">
-<div class="content_navigation_link">Alerts</div>
-<span></span>
-</a>
-
-<a href="">
-<div class="content_navigation_link">Reports</div>
-<span></span>
-</a>
 
 {% endblock navigation_tab %}

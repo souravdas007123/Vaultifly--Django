@@ -726,6 +726,12 @@ button:hover{
     grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
 }
+.preferance_subheading{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: #0e4cfd; */
+}
 .authentication_left{
     display: grid;
     grid-template-columns: 1fr auto;
@@ -733,10 +739,14 @@ button:hover{
     padding: 0.7rem;
     background: var(--theame5);
 }
+
 .authentication_left_heading{
     display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+    justify-content: left;
+    align-items: center;
+    /* flex-direction: column; */
+    /* background-color: #0e4cfd; */
+    /* gap: 0.3rem; */
 }
 .authentication_left_btn{
     display: flex;
@@ -814,7 +824,8 @@ button:hover{
 .drop:hover {
     display: block;
 } */
-/* clients all  */
+
+/* clients  */
 
 /* .table-container{
     background-color: #676769;
@@ -860,16 +871,51 @@ button:hover{
     width: 100%;
     padding: 1rem;
 } */
+.client_overview_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.clientoverview{
+    /* background-color: #0e4cfd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* supplier  */
+.supplier_overview_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.supplier_add_input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+/* teams  */
+
+.team_add_input{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
 
 /* classifications  */
-.classsification_location_container{
+
+.classsification_container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 .classsification_add_navbar_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
     padding: 1rem;

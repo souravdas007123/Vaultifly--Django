@@ -46,14 +46,38 @@ def report(request):
 def team(request):
     return render(request,'page_html/team.html')
 
+def teamoverviews(request):
+    return render(request,'page_html/team_overview.html')
+
+def teamlistviews(request):
+    return render(request,'page_html/team_list_views.html')
+
+def teamadd(request):
+    return render(request,'page_html/team_add.html')
+
 def clients(request):
     return render(request,'page_html/client.html')
 
-def clientsviews(request):
+def clientsoverviews(request):
+    return render(request,'page_html/client_overview.html')
+
+def clientslistviews(request):
     return render(request,'page_html/client_list_views.html')
 
 def clientsadd(request):
     return render(request,'page_html/client_add.html')
+
+def suppliers(request):
+    return render(request,'page_html/suppliers.html')
+
+def suppliersoverview(request):
+    return render(request,'page_html/suppliers_overview.html')
+
+def supplierlistview(request):
+    return render(request,'page_html/suppliers_list_views.html')
+
+def supplieradd(request):
+    return render(request,'page_html/suppliers_add.html')
 
 def classification(request):
     return render(request,'page_html/classifications.html')
@@ -86,7 +110,7 @@ def settingnotification(request):
     return render(request,'page_html/setting_notification.html')
 
 def settingauthentication(request):
-    return render(request,'page_html/setting_authentication.html')
+    return render(request,'page_html/setting_preference.html')
 
 def support(request):
     return render(request,'page_html/support.html')

@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,clients,clientsviews,clientsadd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -16,9 +16,17 @@ urlpatterns = [
     path('inventory/', inventory,name='inventory'),
     path('report/', report,name='report'),
     path('team/', team,name='team'),
+    path('teamoverviews/', teamoverviews,name='teamoverviews'),
+    path('teamlistviews/', teamlistviews,name='teamlistviews'),
+    path('teamadd/', teamadd,name='teamadd'),
     path('clients/', clients,name='clients'),
-    path('clientsviews/', clientsviews,name='clientsviews'),
+    path('clientsoverviews/', clientsoverviews,name='clientsoverviews'),
+    path('clientslistviews/', clientslistviews,name='clientslistviews'),
     path('clientsadd/', clientsadd,name='clientsadd'),
+    path('suppliers/', suppliers,name='suppliers'),
+    path('suppliersoverview/', suppliersoverview,name='suppliersoverview'),
+    path('supplierlistview/', supplierlistview,name='supplierlistview'),
+    path('supplieradd/', supplieradd,name='supplieradd'),
     path('classification/', classification,name='classification'),
     path('classificationlocation/', classificationlocation,name='classificationlocation'),
     path('classificationunit/', classificationunit,name='classificationunit'),
