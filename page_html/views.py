@@ -40,6 +40,18 @@ def finance(request):
 def inventory(request):
     return render(request,'page_html/inventory.html')
 
+def inventorysummery(request):
+    return render(request,'page_html/inventory_summery.html')
+
+def inventorystock(request):
+    return render(request,'page_html/inventory_stock.html')
+
+def inventoryproduct(request):
+    return render(request,'page_html/inventory_product.html')
+
+def inventorypurchase(request):
+    return render(request,'page_html/inventory_purchase.html')
+
 def report(request):
     return render(request,'page_html/report.html')
 
