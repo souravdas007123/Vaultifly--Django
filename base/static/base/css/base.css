@@ -911,14 +911,14 @@ button:hover{
 .classsification_container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.7rem;
 }
 .classsification_add_navbar_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0.7rem;
     background-color: var(--theame5);
 }
 .classsification_add_navbar{
@@ -939,14 +939,14 @@ button:hover{
 .inventory_container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.7rem;
 }
 .inventory_add_navbar_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 0.7rem;
+    padding: 0.7rem;
     background-color: var(--theame5);
 }
 .inventory_add_navbar{
