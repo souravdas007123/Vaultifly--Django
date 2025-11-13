@@ -958,6 +958,12 @@ button:hover{
 .inventory_add_navbar input{
     padding: 0.7rem;
 }
+.ver{
+    grid-template-columns: auto 1fr;
+}
+.very{
+     grid-template-columns: 1fr;
+}
 /* media mobile  */
 
 @media(max-width:667px){

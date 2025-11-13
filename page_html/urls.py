@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventorybilling,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventorybilling,inventoryvaluation,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -20,6 +20,7 @@ urlpatterns = [
     path('inventorypurchase/', inventorypurchase,name='inventorypurchase'),
     path('inventorysale/', inventorysale,name='inventorysale'),
     path('inventorybilling/', inventorybilling,name='inventorybilling'),
+    path('inventoryvaluation/', inventoryvaluation,name='inventoryvaluation'),
     path('report/', report,name='report'),
     path('team/', team,name='team'),
     path('teamoverviews/', teamoverviews,name='teamoverviews'),

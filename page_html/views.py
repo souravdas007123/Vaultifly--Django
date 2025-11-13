@@ -58,6 +58,9 @@ def inventorysale(request):
 def inventorybilling(request):
     return render(request,'page_html/inventory_billing.html')
 
+def inventoryvaluation(request):
+    return render(request,'page_html/inventory_valuation.html')
+
 def report(request):
     return render(request,'page_html/report.html')
 
