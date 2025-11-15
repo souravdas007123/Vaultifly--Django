@@ -958,12 +958,43 @@ button:hover{
 .inventory_add_navbar input{
     padding: 0.7rem;
 }
-.ver{
+.inventory_container_flex{
     grid-template-columns: auto 1fr;
 }
-.very{
+/* .inventory_data_contain_navbar{
+    min-height: 60vh;
+} */
+.inventory_add_navbar_container_coloum_left{
      grid-template-columns: 1fr;
+     gap: 0.7rem;
 }
+.inventory_add_navbar_container_coloum_right{
+    min-height: 75vh;
+    grid-template-columns: 1fr;
+
+}
+.inventory_data_contain_navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem;
+    background-color: var(--theame5);
+}
+fieldset{
+    display: flex;
+    outline: none;
+    border: none;
+}
+fieldset input{
+    outline: none;
+    border: none;
+    padding: 0;
+}
+/* .inventory_add_navbar #useriy{
+    width:0;
+    
+} */
 /* media mobile  */
 
 @media(max-width:667px){

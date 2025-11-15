@@ -1,69 +1,132 @@
-{% extends "page_html/inventory.html" %}
+{% extends "page_html/inventory.html" %} {% block main_data %}
+<div class="inventory_container inventory_container_flex">
 
-{% block main_data %}
-<div class="inventory_container ver">
-    <div class="inventory_add_navbar_container very">
-        <div class="inventory_add_navbar">
-            <input type="text" name="username" id="username" placeholder="Client">
-        </div>
-        <div class="inventory_add_navbar">
-            <input type="date" name="username" id="username" placeholder="Date">
-        </div>
-        <div class="inventory_add_navbar">
-            <input type="text" name="username" id="username" placeholder="Items">
-        </div>
-        <div class="inventory_add_navbar">
-            <input type="text" name="username" id="username" placeholder="Qty">
-        </div>
-         <div class="inventory_add_navbar">
-            <input type="text" name="username" id="username" placeholder="Rate">
-        </div>
-        <div class="inventory_add_navbar">
-            <input type="text" name="username" id="username" placeholder="Amount">
-        </div>
+  <div class="inventory_add_navbar_container inventory_add_navbar_container_coloum_left">
+
+    <div class="inventory_add_navbar">
+      <input type="text" name="username" id="username" placeholder="Items" />
+    </div>
+
+    <div class="inventory_add_navbar">
+      <input type="text" name="username" id="username" placeholder="Qty" />
+    </div>
+
+    <div class="inventory_add_navbar">
+      <input type="text" name="username" id="username" placeholder="Rate" />
+    </div>
+
+    <div class="inventory_add_navbar">
+      <input type="text" name="username" id="username" placeholder="Amount" />
+    </div>
+
+    <button>Add</button>
+
+  </div>
+  <div class="inventory_data_contain inventory_add_navbar_container_coloum_right">
+
+    <div class="inventory_data_contain_navbar">
+
+      <div class="inventory_add_navbar">
+        <input type="text" name="username" id="username" placeholder="Client" />
+      </div>
+      <div class="inventory_add_navbar">
+        <input type="date" name="username" id="username" placeholder="Date" />
+      </div>
+
+       <fieldset>
+
+            <input type="radio" id="red" name="fav_color" value="red" checked>
+            <label for="red">Exclusive</label><br>
+
+            <input type="radio" id="blue" name="fav_color" value="blue">
+            <label for="blue">Inclusive</label><br>
+
+        </fieldset>
+
+    </div>
+
+    <div class="table-container">
         
-        <button>Add</button>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>SL-NO</th>
+            <th>ITEM</th>
+            <th>HSN</th>
+            <th>QTY</th>
+            <th>RATE</th>
+            <th>TAXABLE</th>
+            <th>GST(%)</th>
+            <th>CGST</th>
+            <th>SGST</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mouse</td>
+            <td>854875</td>
+            <td>10</td>
+            <td>220</td>
+            <td>2200</td>
+            <td>18%</td>
+            <td>198</td>
+            <td>198</td>
+            <td>2596</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mouse</td>
+            <td>854875</td>
+            <td>10</td>
+            <td>220</td>
+            <td>2200</td>
+            <td>18%</td>
+            <td>198</td>
+            <td>198</td>
+            <td>2596</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mouse</td>
+            <td>854875</td>
+            <td>10</td>
+            <td>220</td>
+            <td>2200</td>
+            <td>18%</td>
+            <td>198</td>
+            <td>198</td>
+            <td>2596</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mouse</td>
+            <td>854875</td>
+            <td>10</td>
+            <td>220</td>
+            <td>2200</td>
+            <td>18%</td>
+            <td>198</td>
+            <td>198</td>
+            <td>2596</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Mouse</td>
+            <td>854875</td>
+            <td>10</td>
+            <td>220</td>
+            <td>2200</td>
+            <td>18%</td>
+            <td>198</td>
+            <td>198</td>
+            <td>2596</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="inventory_data_contain">
-        <div class="table-container">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>SL-NO</th>
-                        <th>DATE</th>
-                        <th>INVOICE-NO</th>
-                        <th>CLIENT</th>
-                        <th>ITEM</th>
-                        <th>HSN</th>
-                        <th>QTY</th>
-                        <th>RATE</th>
-                        <th>TAXABLE</th>
-                        <th>GST(%)</th>
-                        <th>CGST</th>
-                        <th>SGST</th>
-                        <th>TOTAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>11-11-2025</td>
-                        <td>SSPL/2526001</td>
-                        <td>Electrokraft</td>
-                        <td>Mouse</td>
-                        <td>854875</td>
-                        <td>10</td>
-                        <td>220</td>
-                        <td>2200</td>
-                        <td>18%</td>
-                        <td>198</td>
-                        <td>198</td>
-                        <td>2596</td>
-                    </tr>
-                </tbody>
-              </table>
-             </div>
-    </div>
+  </div>
 </div>
 
 {% endblock main_data %}
