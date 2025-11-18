@@ -830,6 +830,8 @@ button:hover{
 /* .table-container{
     background-color: #676769;
 } */
+
+
 .table{
     width: 100%;
      border-collapse: collapse;
@@ -966,7 +968,7 @@ button:hover{
 } */
 .inventory_add_navbar_container_coloum_left{
      grid-template-columns: 1fr;
-     gap: 0.7rem;
+     gap: 0.1rem;
 }
 .inventory_add_navbar_container_coloum_right{
     min-height: 75vh;
@@ -988,9 +990,13 @@ fieldset{
 }
 fieldset input{
     outline: none;
-    border: none;
-    padding: 0;
+    border-color: none;
 }
+fieldset input:focus{
+    border-color: none;
+    /* outline: none; */
+}
+
 /* .inventory_add_navbar #useriy{
     width:0;
     
