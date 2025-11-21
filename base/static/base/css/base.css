@@ -992,10 +992,11 @@ fieldset input{
     outline: none;
     border-color: none;
 }
-fieldset input:focus{
+fieldset input:focus,input:hover{
     border-color: none;
     /* outline: none; */
 }
+
 
 /* .inventory_add_navbar #useriy{
     width:0;
