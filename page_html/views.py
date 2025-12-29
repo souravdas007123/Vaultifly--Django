@@ -121,6 +121,9 @@ def classificationstatus(request):
 def classificationcategory(request):
     return render(request,'page_html/classifications_category.html')
 
+def manufacture(request):
+    return render(request,'page_html/manufacture.html')
+
 def setting(request):
     return render(request,'page_html/setting.html')
 

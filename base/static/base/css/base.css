@@ -302,7 +302,7 @@ button:hover{
     justify-content:left;
     align-items: center;
     gap: 1rem;
-    padding: 0.8rem var(--medium-spacing);
+    padding: 0.7rem var(--medium-spacing);
     margin: 2px 0;
     /* background-color: bisque; */
     color:var(--heading-color-b);
@@ -959,6 +959,10 @@ button:hover{
 }
 .inventory_add_navbar input{
     padding: 0.7rem;
+    
+}
+.inventory_add_navbar .input_field_dropdown {
+    padding:0.7rem;
 }
 .inventory_container_flex{
     grid-template-columns: auto 1fr;

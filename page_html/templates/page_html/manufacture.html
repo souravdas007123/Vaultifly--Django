@@ -1,0 +1,33 @@
+{% extends "base/base.html" %}
+
+{% block heading %}Manufacture{% endblock heading %}
+
+{% block navigation_tab %}
+
+<a href="{% url 'classificationlocation' %}">
+<div class="content_navigation_link">Order</div>
+<span></span>
+</a>
+
+<a href="{% url 'classificationunit' %}">
+<div class="content_navigation_link">Raw-Material</div>
+<span></span>
+</a>
+
+<a href="{% url 'classificationunit' %}">
+<div class="content_navigation_link">Capacity</div>
+<span></span>
+</a>
+
+<a href="{% url 'classificationstatus' %}">
+<div class="content_navigation_link">Production</div>
+<span></span>
+</a>
+
+<a href="{% url 'classificationstatus' %}">
+<div class="content_navigation_link">Valuation</div>
+<span></span>
+</a>
+
+
+{% endblock navigation_tab %}
