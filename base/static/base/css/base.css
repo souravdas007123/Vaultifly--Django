@@ -202,6 +202,9 @@ button{
 button:hover{
     background: var(--save-button-hover-color);
 }
+label{
+    font-size: var(--fontSize-small)
+}
 /* sidebar  */
 
 .sidebar_container{
