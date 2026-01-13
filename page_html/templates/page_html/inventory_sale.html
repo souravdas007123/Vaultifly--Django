@@ -4,11 +4,41 @@
 <div class="inventory_container">
     <div class="inventory_add_navbar_container">
 
+    <div class="inventory_add_navbar_container_inner_left">
+
         <div class="inventory_add_navbar">
-            <input type="text" name="username" id="username" placeholder="Search">
+            <input type="text" name="username" id="username" placeholder="Client">
         </div>
-        
+
+        <div class="inventory_add_navbar">
+            <input type="text" name="username" id="username" placeholder="Invoice ID">
+        </div>
+
+       
+    </div>  
+    
+    <div class="inventory_add_navbar_container_inner_middle">
+
+        <div class="inventory_add_navbar">
+            <label for="username">From</label>
+            <input type="date" name="username" id="username" placeholder="dd-mm-yy">
+        </div>
+
+        <div class="inventory_add_navbar">
+            <label for="username">To</label>
+            <input type="date" name="username" id="username" placeholder="dd-mm-yy">
+        </div>
+
+    </div>
+
+    <div class="inventory_add_navbar_container_inner_right">
+
+        <a href="{% url 'inventorybilling' %}">
         <button>Create</button>
+        </a> 
+    
+    </div>
+          
     </div>
     <div class="inventory_data_contain">
         <div class="table-container">

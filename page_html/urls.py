@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventorybilling,inventoryvaluation,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -14,13 +14,15 @@ urlpatterns = [
     path('projectworkspace/', projectworkspace,name='projectworkspace'),
     path('finance/', finance,name='finance'),
     path('inventory/', inventory,name='inventory'),
+    path('inventoryoverview/', inventoryoverview,name='inventoryoverview'),    
     path('inventorysummery/', inventorysummery,name='inventorysummery'),
     path('inventorystock/', inventorystock,name='inventorystock'),
     path('inventoryproduct/', inventoryproduct,name='inventoryproduct'),
     path('inventorypurchase/', inventorypurchase,name='inventorypurchase'),
     path('inventorysale/', inventorysale,name='inventorysale'),
+    path('inventoryreturn/', inventoryreturn,name='inventoryreturn'),
     path('inventorybilling/', inventorybilling,name='inventorybilling'),
-    path('inventoryvaluation/', inventoryvaluation,name='inventoryvaluation'),
+    path('inventoryinput/', inventoryinput,name='inventoryinput'),
     path('report/', report,name='report'),
     path('team/', team,name='team'),
     path('teamoverviews/', teamoverviews,name='teamoverviews'),
@@ -39,6 +41,7 @@ urlpatterns = [
     path('classificationunit/', classificationunit,name='classificationunit'),
     path('classificationstatus/', classificationstatus,name='classificationstatus'),
     path('classificationcategory/', classificationcategory,name='classificationcategory'),
+    path('manufacture/', manufacture,name='manufacture'),
     path('setting/', setting,name='setting'),
     path('settingprofile/', settingprofile,name='settingprofile'),
     path('settingpassword/', settingpassword,name='settingpassword'),

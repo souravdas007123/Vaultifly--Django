@@ -40,6 +40,9 @@ def finance(request):
 def inventory(request):
     return render(request,'page_html/inventory.html')
 
+def inventoryoverview(request):
+    return render(request,'page_html/inventory_overview.html')
+
 def inventorysummery(request):
     return render(request,'page_html/inventory_summery.html')
 
@@ -55,11 +58,14 @@ def inventorypurchase(request):
 def inventorysale(request):
     return render(request,'page_html/inventory_sale.html')
 
+def inventoryreturn(request):
+    return render(request,'page_html/inventory_return.html')
+
 def inventorybilling(request):
     return render(request,'page_html/inventory_billing.html')
 
-def inventoryvaluation(request):
-    return render(request,'page_html/inventory_valuation.html')
+def inventoryinput(request):
+    return render(request,'page_html/inventory_input.html')
 
 def report(request):
     return render(request,'page_html/report.html')
@@ -114,6 +120,9 @@ def classificationstatus(request):
 
 def classificationcategory(request):
     return render(request,'page_html/classifications_category.html')
+
+def manufacture(request):
+    return render(request,'page_html/manufacture.html')
 
 def setting(request):
     return render(request,'page_html/setting.html')

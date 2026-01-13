@@ -1,0 +1,86 @@
+{% extends "page_html/inventory.html" %}
+
+{% block main_data %}
+
+    <div class="inventory_overview_container">
+
+        <a href="{% url 'inventorypurchase' %}">
+        <div class="Inventory_overview_sale Inventoryoverview">
+           <div class="inventory_count_head">
+                <div class="inventory_count">12485</div>
+                <div class="inventory_head">Purchase</div>
+            </div>
+           <div class="inventory_amt">
+            <div class="inventory_amt_head">
+               <p>Amount</p>
+               <p>Taxable</p>
+               <p>GST</p>
+            </div>
+            <div class="inventory_amt_amt">
+                <p>Rs. 14584</p>
+                <p>Rs. 45874</p>
+                <p>Rs. 45874</p>
+            </div>
+            </div>
+        </div>
+        </a>
+
+        <a href="{% url 'inventorysale' %}">
+        <div class="Inventory_overview_purchase Inventoryoverview">
+            <div class="inventory_count_head">
+                <div class="inventory_count">1202</div>
+                <div class="inventory_head">Sales</div>
+            </div>
+           <div class="inventory_amt">
+            <div class="inventory_amt_head">
+               <p>Amount</p>
+               <p>Taxable</p>
+               <p>GST</p>
+            </div>
+            <div class="inventory_amt_amt">
+                <p>Rs. 14584</p>
+                <p>Rs. 45874</p>
+                <p>Rs. 45874</p>
+            </div>
+            </div>
+        </div>
+        </a>
+
+        {% comment %} <a href="{% url 'inventoryoverview' %}">
+        <div class="Inventory_overview_purchase Inventoryoverview"><div class="inventory_count_head">
+                
+                <div class="inventory_head">Taxable Value</div>
+            </div>
+           <div class="inventory_amt">Rs.10000</div></div>
+        </a>
+
+        <a href="{% url 'inventoryoverview' %}">
+        <div class="Inventory_overview_purchase Inventoryoverview">
+            <div class="inventory_count_head">
+                
+                <div class="inventory_head">GST Value</div>
+            </div>
+           <div class="inventory_amt">Rs.10000</div>
+        </div>
+        </a> {% endcomment %}
+
+        <a href="{% url 'inventoryreturn' %}">
+        <div class="Inventory_overview_return Inventoryoverview">
+            <div class="inventory_count_head">
+                <div class="inventory_count">12</div>
+                <div class="inventory_head">Return</div>
+            </div>
+           <div class="inventory_amt">Rs.10000</div></div>
+        </a>
+
+        <a href="{% url 'inventoryproduct' %}">
+        <div class="Inventory_overview_product Inventoryoverview">
+            <div class="inventory_count_head">
+                <div class="inventory_count">12</div>
+                <div class="inventory_head">Product</div>
+            </div>
+           <div class="inventory_amt">Rs.10000</div></div>
+        </a>
+    </div>
+
+{% endblock main_data %}
