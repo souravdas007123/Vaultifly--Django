@@ -142,11 +142,23 @@ def settingnotification(request):
 def settingauthentication(request):
     return render(request,'page_html/setting_preference.html')
 
+def settingsubcription(request):
+    return render(request,'page_html/setting_subscription.html')
+
 def support(request):
     return render(request,'page_html/support.html')
 
 def taskglobal(request):
     return render(request,'page_html/task_global.html')
+
+def taskglobaloverview(request):
+    return render(request,'page_html/task_global_overview.html')
+
+def taskglobalasign(request):
+    return render(request,'page_html/task_global_asign.html')
+
+def taskglobalcreate(request):
+    return render(request,'page_html/task_global_create.html')
 
 def notesglobal(request):
     return render(request,'page_html/notes_global.html')

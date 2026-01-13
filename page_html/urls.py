@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -48,8 +48,12 @@ urlpatterns = [
     path('forgetpassword/', forgetpassword,name='forgetpassword'),
     path('settingnotification/', settingnotification,name='settingnotification'),
     path('settingauthentication/', settingauthentication,name='settingauthentication'),
+    path('settingsubcription/', settingsubcription,name='settingsubcription'),
     path('support/', support,name='support'),
     path('taskglobal/', taskglobal,name='taskglobal'),
+    path('taskglobaloverview/', taskglobaloverview,name='taskglobaloverview'),
+    path('taskglobalasign/', taskglobalasign,name='taskglobalasign'),
+    path('taskglobalcreate/', taskglobalcreate,name='taskglobalcreate'),
     path('notesglobal/', notesglobal,name='notesglobal'),
     path('uploadglobal/', uploadglobal,name='uploadglobal'),
     path('validity/', validity,name='validity'),  

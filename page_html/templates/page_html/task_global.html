@@ -2,6 +2,22 @@
 
 {% block heading %}Task{% endblock heading %}
 
-{% block main_data %}
-dhdh
-{% endblock main_data %}
+{% block navigation_tab %}
+
+<a href="{% url 'taskglobaloverview' %}" class='innerpage_hover'>
+    <div class="content_navigation_link">Overview</div>
+    <span></span>
+</a>
+
+<a href="{% url 'taskglobalasign' %}" class='innerpage_hover'>
+    <div class="content_navigation_link">Asign</div>
+    <span></span>
+</a>
+
+<a href="{% url 'taskglobalcreate' %}" class='innerpage_hover'>
+    <div class="content_navigation_link">Create</div>
+    <span></span>
+</a>
+
+
+{% endblock navigation_tab %}
