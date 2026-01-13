@@ -3,9 +3,15 @@
 <div class="inventory_container">
     
   <div class="inventory_add_navbar_container">
+    <div class="inventory_add_navbar_container_inner_left">
     <div class="inventory_add_navbar">
           <input type="text" name="username" id="username" placeholder="Search">
     </div>
+     <a href="{% url 'inventoryproduct' %}">
+        <button>Add Product</button>
+      </a>
+    </div>
+   
   </div>
 
   <div class="table-container">

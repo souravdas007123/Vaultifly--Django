@@ -1,16 +1,13 @@
 {% extends "page_html/inventory.html" %} {% block main_data %}
 <div class="inventory_container">
   <div class="inventory_add_navbar_container">
-    {% comment %}
-    <div class="inventory_add_navbar">
-      <input type="text" name="username" id="username" placeholder="Search" />
-    </div>
-    {% endcomment %}
+   
+    <div class="inventory_add_navbar_container_inner_left">
 
-    <div class="inventory_add_navbar">
+      <div class="inventory_add_navbar">
       <form action="">
         <select name="status" class="input_field_dropdown">
-          <option value="hi">Select Invoice</option>
+          <option value="hi">Select Invoice-ID</option>
           <option value="Compliance">SSPL/2526001</option>
           <option value="Compliance">SSPL/2526002</option>
           <option value="Compliance">SSPL/2526003</option>
@@ -18,6 +15,36 @@
         </select>
       </form>
     </div>
+    <div class="inventory_add_navbar">
+      <form action="">
+        <select name="status" class="input_field_dropdown">
+          <option value="hi">Select Invoice-Items</option>
+          <option value="Compliance">All Items</option>
+          <option value="Compliance">Laptop</option>
+          <option value="Compliance">Mouse</option>
+          <option value="Compliance">Keyboard</option>
+        </select>
+      </form>
+    </div>
+
+     
+
+    </div>
+
+    <div class="inventory_add_navbar_container_inner_middle">
+
+      <a href="{% url 'inventoryinput' %}">
+        <button>Return</button>
+      </a>
+      
+    </div>
+
+    <div class="inventory_add_navbar_container_inner_right">
+
+     
+    </div>
+
+    
     
   </div>
   <div class="inventory_data_contain">
