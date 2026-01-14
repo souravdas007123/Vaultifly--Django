@@ -118,6 +118,12 @@ def classificationlocation(request):
 def classificationunit(request):
     return render(request,'page_html/classifications_unit.html')
 
+def classificationmeasurement(request):
+    return render(request,'page_html/classifications_measurement.html')
+
+def classificationtax(request):
+    return render(request,'page_html/classifications_tax.html')
+
 def classificationstatus(request):
     return render(request,'page_html/classifications_status.html')
 

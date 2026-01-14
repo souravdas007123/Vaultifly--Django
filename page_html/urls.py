@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,reportoverview,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,reportoverview,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationmeasurement,classificationtax,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -40,6 +40,8 @@ urlpatterns = [
     path('classification/', classification,name='classification'),
     path('classificationlocation/', classificationlocation,name='classificationlocation'),
     path('classificationunit/', classificationunit,name='classificationunit'),
+    path('classificationmeasurement/', classificationmeasurement,name='classificationmeasurement'),
+    path('classificationtax/', classificationtax,name='classificationtax'),
     path('classificationstatus/', classificationstatus,name='classificationstatus'),
     path('classificationcategory/', classificationcategory,name='classificationcategory'),
     path('manufacture/', manufacture,name='manufacture'),
