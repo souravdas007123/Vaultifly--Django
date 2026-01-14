@@ -1,0 +1,44 @@
+{% extends "page_html/report.html" %} 
+
+{% block main_data %}
+
+<div class="report_add_input">
+  
+    <div class="report_capture_input_filed_container">
+        <form action="">
+            <select name="status" class="input_field_dropdown">
+            <option value="hi">Application</option>
+            <option value="Compliance">Asset</option>
+            <option value="Compliance">Inventory</option>
+            <option value="Compliance">Project</option>
+            <option value="Compliance">Finance</option>
+            <option value="Compliance">Manufacture</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="report_capture_input_filed_container">
+        <input
+          type="date"
+          name="username"
+          id="username"
+          placeholder="dd-mm-yy"
+        />
+    </div>
+
+    <div class="report_capture_input_filed_container">
+        <input
+          type="date"
+          name="username"
+          id="username"
+          placeholder="dd-mm-yy"
+        />
+    </div>
+
+    
+        <button>Submit</button>
+   
+
+</div>      
+
+{% endblock main_data %}

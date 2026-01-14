@@ -70,6 +70,9 @@ def inventoryinput(request):
 def report(request):
     return render(request,'page_html/report.html')
 
+def reportoverview(request):
+    return render(request,'page_html/report_overview.html')
+
 def team(request):
     return render(request,'page_html/team.html')
 

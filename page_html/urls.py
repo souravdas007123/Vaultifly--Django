@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,reportoverview,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -24,6 +24,7 @@ urlpatterns = [
     path('inventorybilling/', inventorybilling,name='inventorybilling'),
     path('inventoryinput/', inventoryinput,name='inventoryinput'),
     path('report/', report,name='report'),
+    path('reportoverview/', reportoverview,name='reportoverview'),
     path('team/', team,name='team'),
     path('teamoverviews/', teamoverviews,name='teamoverviews'),
     path('teamlistviews/', teamlistviews,name='teamlistviews'),
