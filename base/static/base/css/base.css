@@ -1060,7 +1060,17 @@ fieldset input:focus,input:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
-
+.task_overview_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.taskoverview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* report  */
 
 .report_add_input{
