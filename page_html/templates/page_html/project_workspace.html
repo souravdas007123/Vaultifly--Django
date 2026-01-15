@@ -1,5 +1,43 @@
-{% extends "page_html/project.html" %}
+{% extends "page_html/project.html" %} {% block main_data %}
 
-{% block main_data %}
-    project workspace
+<div class="project_container">
+  <div class="project_add_navbar_container">
+    <div class="project_add_navbar_container_inner_left">
+      <div class="project_add_navbar">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Workspace-Name"
+        />
+      </div>
+    </div>
+
+    <div class="project_add_navbar_container_inner_middle">
+
+      <div class="project_add_navbar">
+        <input
+          type="date"
+          name="username"
+          id="username"
+          placeholder="dd-mm-yy"
+        />
+      </div>
+
+      <div class="project_add_navbar">
+        <input
+          type="date"
+          name="username"
+          id="username"
+          placeholder="dd-mm-yy"
+        />
+      </div>
+    </div>
+
+    <div class="project_add_navbar_container_inner_right"></div>
+  </div>
+
+  <div class="project_data_contain"></div>
+</div>
+
 {% endblock main_data %}

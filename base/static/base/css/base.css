@@ -1085,7 +1085,35 @@ fieldset input:focus,input:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
-
+/* project  */
+.project_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+}
+.project_add_navbar_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem;
+    background-color: var(--theame5);
+}
+.project_add_navbar_container_inner_left,.project_add_navbar_container_inner_middle,.project_add_navbar_container_inner_right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0.7rem;
+}
+.project_add_navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.7rem;
+}
+.project_add_navbar input{
+    padding: 0.7rem; 
+}
 /* media mobile  */
 
 @media(max-width:667px){
