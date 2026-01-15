@@ -1,5 +1,5 @@
 from django.urls import path
-from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,reportoverview,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationmeasurement,classificationtax,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
+from page_html.views import home,asset,assetoverview,assetcapture,assetcapturehardwarecontain,assetcapturelicensecontain,assetcapturecorelicensecontain,assetcapturesoftwarecontain,project,projectoverview,projectworkspace,projectoperation,finance,inventory,inventoryoverview,inventorysummery,inventorystock,inventoryproduct,inventorypurchase,inventorysale,inventoryreturn,inventorybilling,inventoryinput,report,reportoverview,team,teamoverviews,teamlistviews,teamadd,clients,clientsoverviews,clientslistviews,clientsadd,suppliers,suppliersoverview,supplierlistview,supplieradd,classification,classificationlocation,classificationunit,classificationmeasurement,classificationtax,classificationstatus,classificationcategory,manufacture,setting,support,taskglobal,taskglobalcreate,taskglobaloverview,taskglobalasign,notesglobal,uploadglobal,settingprofile,settingpassword,settingnotification,settingauthentication,settingsubcription,forgetpassword,validity
 urlpatterns = [
     path('', home,name='home'),
     path('asset/', asset,name='asset'),
@@ -12,6 +12,7 @@ urlpatterns = [
     path('project/', project,name='project'),
     path('projectoverview/', projectoverview,name='projectoverview'),
     path('projectworkspace/', projectworkspace,name='projectworkspace'),
+    path('projectoperation/', projectoperation,name='projectoperation'),
     path('finance/', finance,name='finance'),
     path('inventory/', inventory,name='inventory'),
     path('inventoryoverview/', inventoryoverview,name='inventoryoverview'),    

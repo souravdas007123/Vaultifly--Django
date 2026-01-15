@@ -469,7 +469,7 @@ label{
     color: var(--heading-color-b);
     /* background-color: #cabbbb; */
 }
-.content_navigation_link:hover ~ span{
+.content_navigation_link:hover ~ span {
     border-bottom: 3px solid var(--theame9);
 }
 .main_content_data{
@@ -1113,6 +1113,9 @@ fieldset input:focus,input:hover{
 }
 .project_add_navbar input{
     padding: 0.7rem; 
+}
+.project_add_navbar .input_field_dropdown{
+    padding: 0.7rem ;
 }
 /* media mobile  */
 
