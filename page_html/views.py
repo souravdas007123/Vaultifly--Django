@@ -37,6 +37,9 @@ def projectworkspace(request):
 def projectoperation(request):
     return render(request,'page_html/project_operation.html')
 
+def projectbroadcast(request):
+    return render(request,'page_html/project_broadcast.html')
+
 def finance(request):
     return render(request,'page_html/finance.html')
 
