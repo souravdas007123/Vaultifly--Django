@@ -736,6 +736,7 @@ label{
     gap: 1rem;
     /* background-color: #0e4cfd; */
 }
+
 .authentication_left{
     display: grid;
     grid-template-columns: 1fr auto;
@@ -756,6 +757,12 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.account_delete_btn{
+    background-color: var(--delete-button-color);
+}
+.account_delete_btn:hover{
+    background-color: var(--delete-button-hover-color);
 }
 /* .authentication_btn button{
     background-color: var(--theame6);
